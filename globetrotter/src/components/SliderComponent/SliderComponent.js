@@ -1,12 +1,23 @@
 import React from "react";
-import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer } from
+import { MDBCarousel, MDBCarouselInner, MDBCarouselItem, MDBView, MDBContainer  } from
 "mdbreact";
 import styled from 'styled-components';
 
 const SliderImage = styled.img`
   object-fit: cover;
   width: 100%;
-  height: 100vh;
+  height: 95vh;
+`;
+
+const SliderText = styled.p`
+  position: absolute;
+  top: 90%;
+  left: 80vw;
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: 600;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 `;
 
 
@@ -29,7 +40,8 @@ const CarouselComponent = () => {
                 src="/images/lagos.jpg"
                 alt="Lagos"
               />
-            </MDBView>
+              <SliderText>Lagos, Nigeria</SliderText>
+          </MDBView>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="2">
             <MDBView>
@@ -38,6 +50,7 @@ const CarouselComponent = () => {
                 src="/images/boston.jpg"
                 alt="Boston"
               />
+              <SliderText>Boston, USA</SliderText>
             </MDBView>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="3">
@@ -47,6 +60,7 @@ const CarouselComponent = () => {
                 src="/images/sydney.jpg"
                 alt="Sydney"
               />
+              <SliderText>Sydney, Australia</SliderText>
             </MDBView>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="4">
@@ -56,6 +70,7 @@ const CarouselComponent = () => {
                 src="/images/havana.jpg"
                 alt="Havana"
               />
+              <SliderText>Havana, Cuba</SliderText>
             </MDBView>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="5">
@@ -65,6 +80,7 @@ const CarouselComponent = () => {
                 src="/images/dublin.jpg"
                 alt="Dublin"
               />
+              <SliderText>Dublin, Ireland</SliderText>
             </MDBView>
           </MDBCarouselItem>
           <MDBCarouselItem itemId="6">
@@ -74,6 +90,7 @@ const CarouselComponent = () => {
                 src="/images/seoul.jpg"
                 alt="Seoul"
               />
+              <SliderText>Seoul, Korea</SliderText>
             </MDBView>
           </MDBCarouselItem>
 

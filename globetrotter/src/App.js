@@ -3,6 +3,7 @@ import {useQuery} from '@apollo/react-hooks';
 import {gql} from 'apollo-boost';
 import SliderComponent from './components/SliderComponent/SliderComponent';
 
+
 const ALL_COUNTRIES_QUERY = gql`
   {
     countries {
