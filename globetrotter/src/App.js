@@ -1,7 +1,7 @@
 import React, {Fragment} from 'react';
 import {useQuery} from '@apollo/react-hooks';
 import {gql} from 'apollo-boost';
-import SliderComponent from './components/SliderComponent/SliderComponent';
+import HomeCompopnent from './components/HomeComponent';
 
 
 const ALL_COUNTRIES_QUERY = gql`
@@ -30,7 +30,7 @@ function App() {
   // );
 
   return (
-    <SliderComponent />
+    <HomeCompopnent />
   )
 }
 

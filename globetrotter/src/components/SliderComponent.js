@@ -12,8 +12,8 @@ const SliderImage = styled.img`
 const SliderText = styled.p`
   position: absolute;
   top: 90%;
-  left: 80vw;
-  color: #ffffff;
+  left: 75vw;
+  color: deeppink;
   font-size: 30px;
   font-weight: 600;
   margin: 0;
@@ -90,7 +90,7 @@ const CarouselComponent = () => {
                 src="/images/seoul.jpg"
                 alt="Seoul"
               />
-              <SliderText>Seoul, Korea</SliderText>
+              <SliderText>Seoul, South Korea</SliderText>
             </MDBView>
           </MDBCarouselItem>
 
