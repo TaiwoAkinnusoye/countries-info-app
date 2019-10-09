@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const SliderImage = styled.img`
   object-fit: cover;
   width: 100%;
-  height: 95vh;
+  height: 91.5vh;
 `;
 
 const SliderText = styled.p`
