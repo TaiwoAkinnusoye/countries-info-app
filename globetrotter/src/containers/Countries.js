@@ -9,8 +9,8 @@ import styled from 'styled-components';
 
 const CountriesGrid = styled.div`
     display: grid;
-    grid-template-columns: repeat(4, 250px);
-    grid-column-gap: 15px;
+    grid-template-columns: repeat(4, 25%);
+    // grid-column-gap: 15px;
     justify-content: center;
     background: #130377;
 `;

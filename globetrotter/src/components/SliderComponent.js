@@ -13,7 +13,7 @@ const SliderText = styled.p`
   position: absolute;
   top: 90%;
   left: 75vw;
-  color: deeppink;
+  color: #FFFFFF;
   font-size: 30px;
   font-weight: 600;
   margin: 0;
