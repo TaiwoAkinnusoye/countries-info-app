@@ -4,7 +4,7 @@ import ApolloClient from 'apollo-boost';
 import {ApolloProvider} from '@apollo/react-hooks';
 import { BrowserRouter as Router, Route} from 'react-router-dom';
 import App from './App';
-import CountriesComponent from './components/CountriesComponent';
+import Countries from './containers/Countries';
 
 const client = new ApolloClient({
   uri: 'https://countries.trevorblades.com'
@@ -13,7 +13,7 @@ const client = new ApolloClient({
 ReactDOM.render(<ApolloProvider client={client}>
   <Router>
         <Route exact path='/' component={App} />
-    <Route path="/countries" component={CountriesComponent} />
+    <Route path="/countries" component={Countries} />
   </Router>
   </ApolloProvider>, document.getElementById('root'));
 
