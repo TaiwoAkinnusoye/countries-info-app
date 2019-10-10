@@ -2,16 +2,16 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Loader = styled.div` 
-    position: relative;    
-    top: 30vh;
-    left: 30vw;
-
+    display: grid;
+    justify-content: center;
+    position: relative;
+    top: 35vh;
 `;
 
 function LoadingComponent () {
     return (
         <Loader>
-            <img src="/images/earth-loading.gif" alt="Loading" width="auto" height="auto" />
+            <img src="/images/Ball.svg" alt="Loading" width="auto" height="auto" />
         </Loader>
     )
 }
