@@ -7,7 +7,6 @@ const CountryCard = styled.div`
     font-family: 'Work Sans', sans-serif;
     padding: 0 0 20px 20px;
     background: #130377;
-    cursor: pointer;
 
     :hover {
         background: #FFFFFF;
@@ -18,6 +17,7 @@ const CountryCard = styled.div`
         text-align: center;
         font-size: 60px;
         font-weight: 600;
+        cursor: pointer;
     }
 
     div.country-continent h6 {
