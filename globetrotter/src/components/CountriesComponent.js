@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const CountryCard = styled.div`
     border: 1px solid #ffffff;
     color: #FFFFFF;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Work Sans', sans-serif;
     padding: 0 0 20px 20px;
     background: #130377;
     cursor: pointer;
