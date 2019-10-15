@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import styled from 'styled-components';
+import {useRouteMatch, Link} from 'react-router-dom';
 
 const CountryCard = styled.div`
     border: 1px solid #ffffff;
@@ -13,6 +14,10 @@ const CountryCard = styled.div`
         color: #130377;
     }
 
+    div.country-code a {
+        text-decoration: none;
+    }
+    
     div.country-code p {
         text-align: center;
         font-size: 60px;
@@ -69,11 +74,16 @@ const CountryCard = styled.div`
 
 function CountriesComponent ({countries}) {
 
+   let match = useRouteMatch('/countries/');
+
    return (
     <Fragment>
         <CountryCard>
             <div className="country-code">
-            <p>{countries.code} </p>
+            <Link to={`${match.url}/${countries.code}`}>
+            <p>{countries.code} </p>   
+          </Link>
+            
             </div>
             <div className="country-name">
             <h6>COUNTRY</h6>
