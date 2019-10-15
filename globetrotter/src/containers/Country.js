@@ -4,6 +4,7 @@ import {useQuery} from '@apollo/react-hooks';
 import {useParams} from 'react-router-dom';
 import NavComponent from '../components/NavComponent';
 import LoadingComponent from '../components/LoadingComponent';
+import CountryComponent from '../components/CountryComponent';
 
 const COUNTRY_QUERY = gql`
     query COUNTRY_QUERY($code: String){
@@ -12,10 +13,6 @@ const COUNTRY_QUERY = gql`
             name
             currency
             phone
-            languages {
-                name
-                native
-            }
         }
     }
 `;
@@ -28,11 +25,10 @@ function Country (props) {
     if (loading) return <LoadingComponent />;
     if (error) return console.log(error.message);
 
-    if (data) console.log(data);
     return (
         <Fragment>
             <NavComponent />
-            <p>Country</p>
+            <CountryComponent {...data.country} />
         </Fragment>
     )
 
