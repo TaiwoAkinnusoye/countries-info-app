@@ -2,10 +2,14 @@ import React, {Fragment} from 'react';
 import gql from 'graphql-tag';
 import {useQuery} from '@apollo/react-hooks';
 import {useParams} from 'react-router-dom';
+import styled from 'styled-components';
 import NavComponent from '../components/NavComponent';
 import LoadingComponent from '../components/LoadingComponent';
 import CountryComponent from '../components/CountryComponent';
 
+const CountryStyles = styled.div`
+    // background: #130377;
+`;
 
 const COUNTRY_QUERY = gql`
     query COUNTRY_QUERY($code: String){
@@ -29,7 +33,9 @@ function Country (props) {
     return (
         <Fragment>
             <NavComponent />
-                        <CountryComponent {...data.country} />
+                <CountryStyles>
+                <CountryComponent {...data.country} />
+                </CountryStyles>
         </Fragment>
     )
 
