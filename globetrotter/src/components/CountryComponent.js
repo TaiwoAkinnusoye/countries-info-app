@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 import styled from 'styled-components';
 
 const CountryBox = styled.div`
-    width: 413px;
+    width: 600px;
     margin: 0 auto;
     font-family: "Work Sans", sans-serif;
     line-height: 2;

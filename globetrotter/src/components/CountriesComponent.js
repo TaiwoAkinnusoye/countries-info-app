@@ -23,6 +23,7 @@ const CountryCard = styled.div`
         font-size: 60px;
         font-weight: 600;
         cursor: pointer;
+        color: rgba(255, 20, 147, 0.6);
     }
 
     div.country-continent h6 {
