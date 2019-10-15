@@ -6,6 +6,7 @@ import NavComponent from '../components/NavComponent';
 import LoadingComponent from '../components/LoadingComponent';
 import CountryComponent from '../components/CountryComponent';
 
+
 const COUNTRY_QUERY = gql`
     query COUNTRY_QUERY($code: String){
         country(code: $code) {
@@ -28,7 +29,7 @@ function Country (props) {
     return (
         <Fragment>
             <NavComponent />
-            <CountryComponent {...data.country} />
+                        <CountryComponent {...data.country} />
         </Fragment>
     )
 
